@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_title %}-Events{% endblock %}
+
+{% block content %}
+
+<!-- <section>
+    <div class="container-fluid" id='concerts'>
+        <div class="row justify-content-center">
+            <div class="col-12 mx-auto text-center">
+                <h2 class="py-5">Events</h2>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+</button>
+
+<section>
+    <div class="row">
+        {% for concert in concerts %}
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card m-5 border-0 mx-auto text-center card-outline">
+                <div class="artist">
+                    <h2 class="card-title">{{ concert.artist }} {% if concert.artist_one %}& {{ concert.artist_one }} {% endif %}</h2>
+                </div>
+                <img src="{{ concert.image.url }}" alt="Card image cap" class="card-img-top">
+                <div class="card-body">
+                    <!-- <div class="artist">
+                        <h2 class="card-title">{{ concert.artist }} {% if concert.artist_one %}& {{ concert.artist_one }} {% endif %}</h2>
+                    </div> -->
+                    <!-- <h3 class="card-text">{{ concert.venue }}</h3> -->
+                    <p class="card-text">{{ concert.date_one }} {% if concert.date_two %}& {{ concert.date_two }} {% endif %} {% if concert.date_three %} & {{ concert.date_three }} {% endif %}</p>
+                    <p>{{ concert.time }}</p>
+                    <a href="{% url 'concert_details' concert.slug %}" class="btn btn-outline page-button">
+                        <i class="fas fa-info-circle concert-info"></i>
+                        Details
+                    </a>
+                    <!-- <a href="{{ concert.tickets }}" class="btn btn-outline page-button text-center" target="_blank">
+                        <i class="fas fa-ticket-alt concert-info"></i>
+                        Tickets
+                    </a> -->
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}
+
+{% block postload_js %}
+
+<script>
+
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+{% endblock %}

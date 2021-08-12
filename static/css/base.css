@@ -1,5 +1,417 @@
+/*-----------------------Font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+h2 {
+    font-size: 1.5rem;
+    font-family: 'Roboto Mono',
+        monospace;
+}
+
 body {
     font-family: Helvetica, sans-serif;
-    color: pink;
-    background-color: blue;
+    color: #003C82;
+    background-color: #ffffff;
+}
+
+.navbar-brand {
+    color: orange;
+}
+
+.cover-image {
+    background-image: url('/media/DFF_HomePage_Banner-LRG_1200x516.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+
+.foggy {
+    font-family: 'Righteous', cursive;
+    color: #ffffff;
+}
+
+.cover-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+/*-----------------------Navbar*/
+
+.navbar {
+    background-color: #FBFFFC;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-family: Helvetica,
+        sans-serif;
+    margin: 0px;
+    padding: 20px 0px;
+    border-radius: 0px;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    padding-left: 30px;
+    color: #003C82 !important;
+    font-family: Helvetica,
+        sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.navbar-nav :link,
+.navbar-nav :visited {
+    color: #003C82 !important;
+    font-size: 25px;
+    justify-content: center;
+}
+
+.navbar-nav :hover,
+.navbar-nav :active {
+    color: #DCC8C8 !important;
+}
+
+a .concerts-link :hover,
+a .concerts-link :active {
+    color: #DCC8C8 !important;
+    text-decoration: none;
+}
+
+/* .navbar-brand {
+    display: none;
+} */
+
+div.dropdown-menu.show {
+    background-color: #FBFFFC !important;
+    color: #FBFFFC !important;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar-nav :link,
+.navbar-nav :visited {
+    color: #003C82 !important;
+    background-color: transparent;
+}
+
+.navbar-nav :hover,
+.navbar-nav :active {
+    color: #D29164 !important;
+}
+
+/*-----------------------Back to Top Button*/
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 10px;
+    border: 1px solid #003C82;
+    outline: none;
+    background-color: transparent;
+    color: #D29164 !important;
+    cursor: pointer;
+    padding: 1px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: #003C82;
+}
+
+#myBtn:visited {
+    background-color: transparent;
+}
+
+/*-----------------------Footer*/
+
+#footer {
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    justify-content: center;
+    letter-spacing: 2px;
+}
+
+/*-----------------------Home App*/
+
+.cover-image {
+    background-image: url('/media/DFF_HomePage_Banner-LRG_1200x516.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* min-height: 1000px; */
+    position: relative;
+}
+
+.cover-text {
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.photo-credit {
+    text-decoration: none;
+    color: #003C82 !important;
+}
+
+.photo-credit :hover {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.page-button {
+    color: #003C82;
+    border-radius: 5px !important;
+    border-color: #003C82;
+    padding: 6px 12px;
+    margin: 0px 0px 8px;
+    font-family: Helvetica, sans-serif;
+}
+
+#site-button {
+    background-color: #FBFFFC;
+}
+
+.post-image {
+    height: 200px;
+    width: 200px;
+    float: left;
+}
+
+.dark-border {
+    border-bottom: solid 2px #003C82;
+}
+
+.fas,
+.fab {
+    color: #ED0000;
+    font-size: 30px;
+    padding: 10px;
+    margin: 5px;
+    display: block;
+}
+
+.facebook {
+    color: #4267B2;
+}
+
+.twitter {
+    color: #1DA1F2;
+}
+
+.instagram {
+    color: #405DE6;
+}
+
+.youtube {
+    color: #c4302b;
+}
+
+.website {
+    color: #2E8B57;
+}
+
+#message {
+    color: #ED0000;
+    text-align: center;
+}
+
+select,
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/*-----------------------Concerts App*/
+
+.concerts-button {
+    color: #FBFFFC;
+    text-decoration: none;
+    border-style: dotted;
+}
+
+.concerts-button :hover {
+    color: #ED0000 !important;
+}
+
+.card {
+    width: 18rem;
+    height: 36rem;
+    border: none;
+}
+
+/* .card-img-top {
+    width: 100%;
+    height: 50vw;
+    object-fit: cover;
+} */
+
+.card-outline {
+    border: solid #003C82 2px;
+    /* background-color: #FBFFFC; */
+    color: #003C82;
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 10px;
+}
+
+.concert-info {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+#concerts {
+    color: #003C82 !important;
+}
+
+#concert-image {
+    max-width: 384px;
+    max-height: 535px;
+}
+
+hr {
+    border: 1px solid #D29164;
+}
+
+.back-icon {
+    padding: 0px !important;
+
+}
+
+
+
+
+/*-----------------------Media Queries*/
+
+@media screen and (max-width: 549px) {
+
+    .cover-image {
+        background-image: url('/media/DFF_HomePage_Banner-SMALL-300x300.png');
+        max-height: 300px;
+        max-width: 300px;
+    }
+
+
+    .brand-text {
+        font-size: 15px;
+        color: #ffffff;
+    }
+
+    .date-text,
+    .foggy {
+        font-size: 8px;
+        color: #ffffff;
+    }
+
+    .navbar-brand {
+        display: block;
+    }
+
+    .fas,
+    .fab {
+        /* color: #ED0000; */
+        font-size: 20px;
+        padding: 5px;
+        margin: 5px;
+        text-decoration: none;
+    }
+
+    .card {
+        width: 18rem;
+        height: 36rem;
+    }
+
+    .concert-info {
+        padding: 0;
+        margin: 0;
+        font-size: 20px;
+    }
+
+    #concert-image {
+        max-width: 384px;
+        max-height: 400px;
+    }
+
+    .post-image {
+        float: none;
+    }
+
+    .mobile-logo-main {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 550px) and (max-width: 992px) {
+
+    .cover-image {
+        background-image: url('/media/DFF_HomePage_Banner-MED_1000x484.png');
+    }
+
+    .brand-text {
+        font-size: 20px !important;
+        color: #ffffff;
+    }
+
+    .date-text,
+    .foggy {
+        font-size: 16px;
+        color: #ffffff;
+    }
+
+    .navbar-brand {
+        display: block;
+    }
+
+    .brand-text {
+        font-size: 75px;
+    }
+
+    .card {
+        width: 18rem;
+        height: 44rem;
+    }
+
+    #concert-image {
+        max-width: 384px;
+        max-height: 400px;
+    }
+
+    .mobile-logo {
+        display: none;
+    }
+
+
+}
+
+@media screen and (min-width: 993px) {
+
+    .cover-image {
+        height: 700px;
+    }
+
+    .mobile-logo {
+        display: none;
+    }
+
 }
