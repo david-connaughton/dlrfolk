@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'home',
     'concerts',
     'embed_video',
+    'storages',
 ]
 
 MIDDLEWARE = [
