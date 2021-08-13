@@ -35,6 +35,10 @@ ALLOWED_HOSTS = ['dlr-folk.herokuapp.com', 'localhost', '127.0.0.1',
                  'www.dlrfolk.ie', 'dlrfolk.ie', ]
 
 
+SECURE_SSL_REDIRECT = True
+
+SECURE_REFERRER_POLICY = "no-referrer-when-downgrade"
+
 # Application definition
 
 INSTALLED_APPS = [
