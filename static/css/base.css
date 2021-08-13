@@ -254,8 +254,8 @@ input {
 }
 
 .card {
-    width: 18rem;
-    height: 36rem;
+    width: 24rem;
+    height: 50rem;
     border: none;
 }
 
@@ -267,7 +267,7 @@ input {
 
 .card-outline {
     border: solid #003C82 2px;
-    /* background-color: #FBFFFC; */
+    background-color: #FBFFFC;
     color: #003C82;
     background-color: #ffffff;
     padding: 10px;
