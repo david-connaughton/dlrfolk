@@ -272,6 +272,14 @@ input {
     margin: 10px;
 }
 
+.card-outline-details {
+    border: solid #003C82 2px;
+    background-color: #FBFFFC;
+    color: #003C82;
+    /* padding: 10px;
+    margin: 10px; */
+}
+
 .concert-info {
     padding: 0;
     margin: 0;
