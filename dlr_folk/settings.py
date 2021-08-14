@@ -32,7 +32,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['dlr-folk.herokuapp.com', 'localhost', '127.0.0.1',
-                 'www.dlrfolk.ie', 'dlrfolk.ie', ]
+                 'www.dlrfolk.ie', 'dlrfolk.ie',
+                 'www.dunlaoghairefolkfestival.ie', 'dunlaoghairefolkfestival.ie', ]
 
 
 SECURE_SSL_REDIRECT = True
