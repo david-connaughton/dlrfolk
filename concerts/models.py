@@ -24,6 +24,7 @@ class Concert(models.Model):
     rescheduled_to_2 = models.DateField(null=True, blank=True)
     doors = models.TimeField()
     time = models.TimeField()
+    status = models.CharField(max_length=100, null=True, blank=True)
     tickets = models.URLField(max_length=1024, null=True, blank=True)
     content = models.TextField(default="Content Goes Here")
     image_url = models.URLField(max_length=1024, null=True, blank=True)

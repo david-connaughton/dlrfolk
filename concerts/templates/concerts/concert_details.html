@@ -27,6 +27,11 @@
                 <br />
                 <h3>{{ concert.time }}</h3>
                 <br />
+                {% if concert.status %}
+                <div class="container-fluid text-center">
+                    <h3 id="message">{{ concert.status }}</h3>
+                </div>
+                {% endif %}
                 <div class="container-fluid text-center">
                     <small>Ticket Link</small>
                     <br />
