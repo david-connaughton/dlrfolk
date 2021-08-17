@@ -25,7 +25,7 @@
                 <br />
                 <h3>{{ concert.date_one }} {% if concert.date_two %}& {{ concert.date_two }} {% endif %} {% if concert.date_three %} & {{ concert.date_three }} {% endif %}</h3>
                 <br />
-                <h3>Doors at: {{ concert.doors }}</h3>
+                <h3>Doors at {{ concert.doors }}</h3>
                 <h3>Show starts at {{ concert.time }} sharp</h3>
                 <br />
                 {% if concert.status %}
