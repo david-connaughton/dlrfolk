@@ -51,7 +51,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'home',
     'concerts',
-    'gallery',
     'embed_video',
     'storages',
 ]
