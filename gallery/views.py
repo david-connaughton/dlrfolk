@@ -1,7 +1,63 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render, get_object_or_404
+from django.utils import timezone
+from django.contrib import messages
 
-# Create your views here.
+from .models import Gallery
+
+from django.conf import settings
+from mailchimp_marketing import Client
+from mailchimp_marketing.api_client import ApiClientError
+
+import os
+
+if os.path.exists("env.py"):
+    import env
+
+# MailChimp Settings
+api_key = os.environ.get('MAILCHIMP_API_KEY')
+server = os.environ.get('MAILCHIMP_DATA_CENTER')
+list_id = os.environ.get('MAILCHIMP_EMAIL_LIST_ID')
 
 
-def gallery(request):
-    return HttpResponse("Hello!")
+def subscribe(email):
+    """
+    Contains code handling the communication to the mailchimp api
+    to create a contact/member in an audience/list.
+    """
+
+    mailchimp = Client()
+    mailchimp.set_config({
+        "api_key": api_key,
+        "server": server,
+    })
+
+    member_info = {
+        "email_address": email,
+        "status": "subscribed",
+    }
+
+    try:
+        response = mailchimp.lists.add_list_member(list_id, member_info)
+        print("response: {}".format(response))
+    except ApiClientError as error:
+        print("An exception occurred: {}".format(error.text))
+
+
+def images(request):
+    """ A view to render concerts"""
+    images = Gallery.objects.filter(publish__lte=timezone.now())
+    template = 'gallery/gallery.html'
+    context = {
+        'images': images,
+    }
+    if request.method == 'POST':
+        email = request.POST['email']
+        subscribe(email)                    # function to access mailchimp
+        messages.success(request, "Thank you for subscribing!")  # message
+        images = Gallery.objects.filter(publish__lte=timezone.now())
+        template = 'gallery/gallery.html'
+        context = {
+            'images': images,
+        }
+        return render(request, "gallery/gallery.html", context)
+    return render(request, template, context)
