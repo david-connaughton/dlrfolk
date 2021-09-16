@@ -22,19 +22,22 @@
 <section>
     <div class="row">
         {% for photo in photos %}
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="card m-5 border-0 mx-auto text-center card-outline">
-                <img src="{{ photo.image.url }}" alt="Card image cap" class="card-img-top">
-                <div class="card-body">
-                    <div class="artist">
-                        <h2 class="card-title">{{ photo.artist }}</h2>
-                    </div>
-                    <p class="card-text">{{ photo.date_one }} </p>
-                    <small>{{ photo.image_by }}</small>
+        <div class="col-12 col-md-6 col-lg-6">
+            <!-- <div class="card m-5 border-0 mx-auto text-center card-outline"> -->
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="{{ photo.image.url }}"></iframe>
+            </div>
+            <!-- <img src="{{ photo.image.url }}" alt="Card image cap" class="card-img-top"> -->
+            <div class="card-body">
+                <div class="artist">
+                    <h2 class="card-title">{{ photo.artist }}</h2>
                 </div>
+                <p class="card-text">{{ photo.date_one }} </p>
+                <!-- <small>{{ photo.image_by }}</small> -->
             </div>
         </div>
-        {% endfor %}
+    </div>
+    {% endfor %}
     </div>
 </section>
 
