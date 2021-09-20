@@ -309,6 +309,9 @@ hr {
     text-align: center;
 }
 
+.carousel-caption {
+    opacity: 50%;
+}
 
 /*-----------------------Media Queries*/
 
@@ -367,6 +370,14 @@ hr {
 
     .mobile-logo-main {
         display: none;
+    }
+
+    .caption-name {
+        font-size: 8px;
+    }
+
+    .caption-date {
+        font-size: 4px;
     }
 
 }
