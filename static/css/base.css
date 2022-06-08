@@ -1,17 +1,19 @@
 /*-----------------------Font*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Righteous&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Righteous&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap'); */
 
 h2 {
     font-size: 1.5rem;
-    font-family: 'Roboto Mono',
-        monospace;
+    font-family: 'DM Sans',
+        sans-serif;
 }
 
 body {
-    font-family: Helvetica, sans-serif;
+    font-family: 'DM Sans',
+        sans-serif;
     color: #003C82;
     background-color: #ffffff;
 }
@@ -50,7 +52,7 @@ body {
     background-color: #FBFFFC;
     font-size: 16px;
     letter-spacing: 2px;
-    font-family: Helvetica,
+    font-family: 'DM Sans',
         sans-serif;
     margin: 0px;
     padding: 20px 0px;
@@ -61,7 +63,7 @@ body {
     font-size: 25px;
     padding-left: 30px;
     color: #003C82 !important;
-    font-family: Helvetica,
+    font-family: 'DM Sans',
         sans-serif;
     text-transform: capitalize;
     letter-spacing: 2px;
@@ -136,7 +138,8 @@ div.dropdown-menu.show {
 /*-----------------------Footer*/
 
 #footer {
-    font-family: Helvetica, sans-serif;
+    font-family: 'DM Sans',
+        sans-serif;
     font-size: 15px;
     justify-content: center;
     letter-spacing: 2px;
@@ -183,7 +186,9 @@ a:hover {
     border-color: #003C82;
     padding: 6px 12px;
     margin: 0px 0px 8px;
-    font-family: Helvetica, sans-serif;
+    font-family: 'DM Sans',
+        sans-serif;
+    ;
 }
 
 #site-button {
