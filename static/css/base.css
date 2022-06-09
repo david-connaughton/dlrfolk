@@ -19,7 +19,7 @@ p {
 body {
     font-family: 'DM Sans',
         sans-serif;
-    color: #003C82;
+    color: #00148c;
     background-color: #ffffff;
 }
 
@@ -54,7 +54,7 @@ body {
 /*-----------------------Navbar*/
 
 .navbar {
-    background-color: #FBFFFC;
+    background-color: #ffffff;
     font-size: 16px;
     letter-spacing: 2px;
     font-family: 'DM Sans',
@@ -76,19 +76,19 @@ body {
 
 .navbar-nav :link,
 .navbar-nav :visited {
-    color: #003C82 !important;
+    color: #00148c !important;
     font-size: 25px;
     justify-content: center;
 }
 
 .navbar-nav :hover,
 .navbar-nav :active {
-    color: #DCC8C8 !important;
+    color: #fa96c8 !important;
 }
 
 a .concerts-link :hover,
 a .concerts-link :active {
-    color: #DCC8C8 !important;
+    color: #fa96c8 !important;
     text-decoration: none;
 }
 
@@ -105,13 +105,13 @@ div.dropdown-menu.show {
 
 .navbar-nav :link,
 .navbar-nav :visited {
-    color: #003C82 !important;
+    color: #00148c !important;
     background-color: transparent;
 }
 
 .navbar-nav :hover,
 .navbar-nav :active {
-    color: #D29164 !important;
+    color: #fa96c8 !important;
 }
 
 /*-----------------------Back to Top Button*/
@@ -186,9 +186,9 @@ a:hover {
 }
 
 .page-button {
-    color: #003C82;
+    color: #ffffff;
     border-radius: 5px !important;
-    border-color: #003C82;
+    border-color: #fa96c8;
     padding: 6px 12px;
     margin: 0px 0px 8px;
     font-family: 'DM Sans',
@@ -197,7 +197,7 @@ a:hover {
 }
 
 #site-button {
-    background-color: #FBFFFC;
+    background-color: #ffffff;
 }
 
 .post-image {
@@ -207,7 +207,7 @@ a:hover {
 }
 
 .dark-border {
-    border-bottom: solid 2px #003C82;
+    border-bottom: solid 2px #00148c;
 }
 
 .fas,
@@ -236,7 +236,7 @@ a:hover {
 }
 
 .website {
-    color: #2E8B57;
+    color: #ffb428;
 }
 
 #message {
@@ -254,13 +254,13 @@ input {
 /*-----------------------Concerts App*/
 
 .concerts-button {
-    color: #FBFFFC;
+    color: #ffffff;
     text-decoration: none;
     border-style: dotted;
 }
 
 .concerts-button :hover {
-    color: #ED0000 !important;
+    color: #fa96c8 !important;
 }
 
 .card {
@@ -297,7 +297,7 @@ input {
 }
 
 #concerts {
-    color: #003C82 !important;
+    color: #00148c !important;
 }
 
 #concert-image {
@@ -306,7 +306,7 @@ input {
 }
 
 hr {
-    border: 1px solid #D29164;
+    border: 1px solid #ffb428;
 }
 
 .back-icon {
