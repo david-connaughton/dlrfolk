@@ -328,7 +328,7 @@ hr {
 @media screen and (max-width: 549px) {
 
     .cover-image {
-        background-image: url('/media/DFF_Banner1_1920x1080.jpg');
+        background-image: url('media/DFF2022_Announce_Post2.jpg');
         max-height: 300px;
         max-width: 300px;
     }
