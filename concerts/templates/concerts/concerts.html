@@ -26,13 +26,13 @@
             <div class="card m-5 border-0 mx-auto text-center card-outline">
                 <img src="{{ concert.image.url }}" alt="Card image cap" class="card-img-top">
                 <div class="card-body">
-                    <div class="artist">
+                    <!-- <div class="artist">
                         <h2 class="card-title">{{ concert.artist }} {% if concert.artist_one %}& {{ concert.artist_one }} {% endif %}</h2>
-                    </div>
+                    </div> -->
                     <!-- <h3 class="card-text">{{ concert.venue }}</h3> -->
-                    <p class="card-text">{{ concert.date_one }} {% if concert.date_two %}& {{ concert.date_two }} {% endif %} {% if concert.date_three %} & {{ concert.date_three }} {% endif %}</p>
+                    <!-- <p class="card-text">{{ concert.date_one }} {% if concert.date_two %}& {{ concert.date_two }} {% endif %} {% if concert.date_three %} & {{ concert.date_three }} {% endif %}</p>
                     <p>Doors at {{ concert.doors }}</p>
-                    <p>Show starts at {{ concert.time }} sharp</p>
+                    <p>Show starts at {{ concert.time }} sharp</p> -->
                     <a href="{% url 'concert_details' concert.slug %}" class="btn btn-outline page-button">
                         <i class="fas fa-info-circle concert-info"></i>
                         Details
