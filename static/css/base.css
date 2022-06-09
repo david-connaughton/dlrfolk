@@ -153,7 +153,7 @@ div.dropdown-menu.show {
 /*-----------------------Home App*/
 
 .cover-image {
-    background-image: url('/media/DFF_HomePage_Banner-LRG_1200x516.png');
+    background-image: url('/media/DFF_Banner1_1920x1080.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -328,7 +328,7 @@ hr {
 @media screen and (max-width: 549px) {
 
     .cover-image {
-        background-image: url('/media/DFF_HomePage_Banner-SMALL-300x300.png');
+        background-image: url('/media/DFF_Banner1_1920x1080.jpg');
         max-height: 300px;
         max-width: 300px;
     }
@@ -395,7 +395,7 @@ hr {
 @media screen and (min-width: 550px) and (max-width: 992px) {
 
     .cover-image {
-        background-image: url('/media/DFF_HomePage_Banner-MED_1000x484.png');
+        background-image: url('/media/DFF_Banner1_1920x1080.jpg');
     }
 
     .brand-text {
