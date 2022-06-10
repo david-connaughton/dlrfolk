@@ -36,14 +36,7 @@ body {
     position: relative;
 }
 
-.lineup-image {
-    background-image: url('/media/DFF2022_Announce_Post2.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    position: relative;
-}
+
 
 .foggy {
     font-family: 'Righteous', cursive;
